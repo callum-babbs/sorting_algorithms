@@ -10,7 +10,11 @@ class Sorting {
         int size;
         int sortNum;
 
-        void selectionSort(int, int);
+        //Selects smallest element from unsorted array portion and moves it to the sorted array portion.
+        //Search array until smallest value is found, then swap with current index location value.
+        //Once swapped, increment the min index to the next element
+        //Time Complexity: O(N^2) - quadratic
+        void selectionSort(int array[], int n);
 
         void bubbleSort(int, int);
 
@@ -24,14 +28,11 @@ class Sorting {
 
         void radixSort(int, int);
 
-        void swap(int, int);
+        void swap(int *minElement, int *firstElement);
         
-        void printArray(int, int);
+        void printArray(int array[], int size);
 
 
-}
-
-
-
+};
 
 #endif
